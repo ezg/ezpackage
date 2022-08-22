@@ -1,4 +1,5 @@
 from setuptools import setup
+import setuptools
 
 setup(
     name='ezpackage',
@@ -8,11 +9,10 @@ setup(
     author='Emanuel Zgraggen',
     author_email='emanuel.zgraggen@gmail.com',
     license='BSD 2-clause',
-    packages=['ezpackage'],
     install_requires=[
         'numpy',
     ],
-
+    packages=setuptools.find_packages(),
     classifiers=[
         'ezpackage',
     ],
