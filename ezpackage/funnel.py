@@ -68,5 +68,4 @@ def plot(groups):
                                    )
                        )
     fig = go.Figure(data, layout)
-    print("Ttastastst")
     return fig

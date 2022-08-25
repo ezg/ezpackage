@@ -4,6 +4,7 @@ import ezpackage
 import pandas as pd
 import plotly.graph_objects as go
 import seaborn as sns
+import matplotlib.pyplot as plt
 
 ezpackage.__author__
 
@@ -26,3 +27,5 @@ time_col = 'TIMESTAMP'
 
 groups = ezpackage.matrix.matrix(
     df, max_steps=5, event_col=event_col, index_col=user_col, time_col=time_col, thresh=0.01)
+plt.savefig("foo.svg")
+plt.show()
