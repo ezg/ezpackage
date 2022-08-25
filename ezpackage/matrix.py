@@ -557,4 +557,5 @@ def plot(data, targets=None, *,
 
     plot_name = plot_name or 'step_matrix_{}'.format(
         datetime.now()).replace(':', '_').replace('.', '_') + '.svg'
+    print("asdd")
     return heatmap, plot_name, None
