@@ -540,7 +540,7 @@ def plot(data, targets=None, *,
 
             # add vertical lines for central step-matrix
             if centered_position is not None:
-                ax.vlines([centered_position-0.02, centered_position+0.98],
+                ax.vlines([centered_position-0.02, centered_position],
                           *ax.get_ylim(),
                           colors='Black',
                           linewidth=0.7)
@@ -550,12 +550,10 @@ def plot(data, targets=None, *,
         sns.mpl.pyplot.yticks(rotation=0)
         # add vertical lines for central step-matrix
         if centered_position is not None:
-            axs.vlines([centered_position-0.02, centered_position+0.98],
+            axs.vlines([centered_position-0.02, centered_position],
                        *axs.get_ylim(),
                        colors='Black',
                        linewidth=0.7)
-
     plot_name = plot_name or 'step_matrix_{}'.format(
         datetime.now()).replace(':', '_').replace('.', '_') + '.svg'
-    print("asdd")
     return heatmap, plot_name, None

@@ -27,5 +27,5 @@ time_col = 'TIMESTAMP'
 
 groups = ezpackage.matrix.matrix(
     df, max_steps=5, event_col=event_col, index_col=user_col, time_col=time_col, thresh=0.01)
-plt.savefig("foo.svg")
+plt.savefig("foo.svg", bbox_inches="tight")
 plt.show()
