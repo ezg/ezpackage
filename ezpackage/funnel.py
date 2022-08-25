@@ -68,4 +68,4 @@ def plot(groups):
                                    )
                        )
     fig = go.Figure(data, layout)
-    fig.show()
+    return fig
