@@ -51,8 +51,7 @@ def plot(groups):
         trace = go.Funnel(
             name=t,
             y=groups[t]['targets'],
-            x=groups[t]['values'],
-            textinfo="value+percent initial+percent previous"
+            x=groups[t]['values']
         )
         data.append(trace)
 
