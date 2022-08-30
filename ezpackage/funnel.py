@@ -63,7 +63,7 @@ def plot(groups):
                                    bgcolor='#E2E2E2',
                                    xanchor='left',
                                    font=dict(
-                                       size=12)
+                                       size=8)
                                    )
                        )
     fig = go.Figure(data, layout)
