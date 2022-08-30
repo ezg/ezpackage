@@ -58,12 +58,15 @@ def plot(groups):
     layout = go.Layout(margin={"l": 180, "r": 0, "t": 30, "b": 0, "pad": 0},
                        funnelmode="stack",
                        showlegend=True,
+                       autosize=False,
+                       width=600,
+                       height=400,
                        hovermode='closest',
                        legend=dict(orientation="v",
                                    bgcolor='#E2E2E2',
                                    xanchor='left',
                                    font=dict(
-                                       size=8)
+                                       size=12)
                                    )
                        )
     fig = go.Figure(data, layout)
